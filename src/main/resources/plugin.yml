@@ -1,0 +1,20 @@
+name: SpellsLegacy
+version: '${project.version}'
+main: me.portal15.spellslegacy.SpellsLegacy
+api-version: 1.19
+authors: [Portal15]
+description: Spells
+commands:
+  resetplayer:
+    description: Reset The Player's Data
+  adminItemMenu:
+    description: Open The Admin Item Menu!
+  setPlayerDataLvl:
+    description: Set The Lvl Of Player's spells/maxMana/magicLvl
+    usage: /<command> <SpellName/MaxMana/MagicLvl> <Lvl> [Online Player]
+  selectSpell:
+    description: Open The Select Spell Menu
+    usage: /<command>
+  test:
+    description: Amit was here.
+    usage: /<command>
