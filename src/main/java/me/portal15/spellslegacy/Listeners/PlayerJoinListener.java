@@ -19,6 +19,7 @@ public class PlayerJoinListener implements Listener {
     public void onPlayerJoin(PlayerJoinEvent e){
         Player p = e.getPlayer();
         plugin.spellSlot.put(p.getUniqueId(),1);
+        plugin.sneak.put(p.getUniqueId(),false);
         p.sendMessage(ChatColor.MAGIC + "&&&&" + ChatColor.DARK_PURPLE + "Welcome " + ChatColor.LIGHT_PURPLE + p.getDisplayName() + ChatColor.DARK_PURPLE + "To" + ChatColor.BOLD + ChatColor.DARK_PURPLE + "SpellsLegacy!");
         if(!p.hasPlayedBefore()){
             SpellsLegacy.spellsFile.getConfig().set(p.getUniqueId().toString() + ".lvl", 1);

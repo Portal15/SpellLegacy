@@ -17,4 +17,5 @@ public abstract class BaseSpell {
     public abstract Integer getManaCost();
 
     public abstract void onRightClick(PlayerInteractEvent e, SpellsLegacy plugin);
+    public abstract void onRightClickMystery(PlayerInteractEvent e, SpellsLegacy plugin);
 }

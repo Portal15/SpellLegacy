@@ -62,10 +62,14 @@ public class Accio extends BaseSpell{
 
         p.sendMessage(Utils.chat("&eAccio!"));
         if(target instanceof Player){
-            target.sendMessage(Utils.chat("&7Somebody used the&e accio &7spell on you!"));
+            target.sendMessage(Utils.chat("&7Somebody used the&e Accio &7spell on you!"));
             if (SpellsLegacy.spellsFile.getConfig().getInt(p.getUniqueId() + ".accio") == 2) {
                 ((Player) target).addPotionEffect(new PotionEffect(PotionEffectType.DARKNESS, 60, 1));
             }
         }
+    }
+
+    @Override
+    public void onRightClickMystery(PlayerInteractEvent e, SpellsLegacy plugin) {
     }
 }

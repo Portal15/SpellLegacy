@@ -21,6 +21,7 @@ public final class SpellsLegacy extends JavaPlugin {
     public HashMap<UUID,String> spellType3 = new HashMap<>();
 
     public HashMap<UUID,Integer> spellSlot = new HashMap<>();
+    public HashMap<UUID,Boolean> sneak = new HashMap<>();
 
     public static SpellsFile spellsFile;
 
