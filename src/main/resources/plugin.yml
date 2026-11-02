@@ -1,20 +1,36 @@
-name: SpellsLegacy
+name: SpellLegacy
 version: '${project.version}'
-main: me.portal15.spellslegacy.SpellsLegacy
-api-version: 1.19
-authors: [Portal15]
-description: Spells
+main: portal15.spelllegacy.SpellLegacy
+api-version: '1.20'
+authors: [portal15]
+depend: [ProtocolLib]
+description: SpellLegacy - adds some magic!
 commands:
-  resetplayer:
-    description: Reset The Player's Data
-  adminItemMenu:
-    description: Open The Admin Item Menu!
-  setPlayerDataLvl:
-    description: Set The Lvl Of Player's spells/maxMana/magicLvl
-    usage: /<command> <SpellName/MaxMana/MagicLvl> <Lvl> [Online Player]
-  selectSpell:
-    description: Open The Select Spell Menu
+  mySpells:
+    description: Display your learned spells.
     usage: /<command>
+  learn:
+    description: Learn a spell.
+    usage: /<command> <Spell> [Player]
+    permission: spelllegacy.learn
+    permission-message: "You don't have permission to use this command. Please ask an admin."
+  unLearn:
+    description: Unlearn a spell.
+    usage: /<command> [spell
+    permission: spelllegacy.unlearn
+    permission-message: "You don't have permission to use this command. Please ask an admin."
+  selectSpells:
+    description: Select the spells you want to use.
+    usage: /<command> [Spell] [Spell] [Spell]
+  adminMenu:
+    description: Open the admin menu.
+    usage: /<command>
+    permission: spelllegacy.admin
+    permission-message: "You don't have permission to use this command. Please ask an admin."
   test:
-    description: Amit was here.
+    description: Test command.
+  safeReload:
+    description: Reload the plugin without losing data.
     usage: /<command>
+    permission: spelllegacy.reload
+    permission-message: "You don't have permission to use this command. Please ask an admin."
